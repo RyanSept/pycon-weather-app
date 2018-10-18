@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #11134a;
+  background-color: #2D3047;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,5 +33,5 @@
 
 .weather-icon {
   font-size: 9em;
-  color: #61dafb;
+  color: #E0CA3C;
 }
