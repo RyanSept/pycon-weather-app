@@ -4,7 +4,7 @@ export default function getWeather(city) {
         "name": "Nairobi, KE",
         "temp": 7,
         "weather": {
-            "id": 701,
+            "id": 503,
             "main": "Mist",
             "description": "mist",
             "icon": "50d"

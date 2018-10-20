@@ -1,21 +1,15 @@
-.App {
+body {
   text-align: center;
+  font-weight: 100;
+  background-color: #2D3047;
+  font-family: Roboto;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-}
-
-.App-header {
-  background-color: #2D3047;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -32,6 +26,42 @@
 }
 
 .weather-icon {
-  font-size: 9em;
-  color: #E0CA3C;
+  font-size: 6.75em;
+  color: #F4E04D;
+}
+
+.weather-details {
+  color: #54F2F2;
+}
+
+.weather-details p{
+  margin: 0;
+}
+
+.weather-details #temp{
+  font-size: 2.5em;
+  margin-top: 5px;
+}
+
+.weather-details #location {
+  font-size: 0.75em;
+}
+
+.weather-details #weather-state {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+.input-container {
+  margin: 0 auto;
+}
+
+.results {
+  margin-top: 3%;
+}
+
+.subscribe-modal {
+  width: 30% !important;
 }
