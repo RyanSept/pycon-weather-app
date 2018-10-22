@@ -1,14 +1,9 @@
-export default function getWeather(city) {
-    return {
-        "id": 2643743,
-        "name": "Nairobi, KE",
-        "temp": 7,
-        "weather": {
-            "id": 503,
-            "main": "Mist",
-            "description": "mist",
-            "icon": "50d"
-        },
+import axios from 'axios';
 
-    };
+export default function getWeather(city) {
+    console.log(process.env.REACT_APP_API_URL);
+    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+    return axios.get(`${API_URL}/weather`, {
+        params: { city }
+    });
 }
