@@ -5,7 +5,6 @@ import PhoneInput from 'react-phone-number-input';
 
 import TextField from 'material-ui/TextField';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { grey50, pink200, pink300 } from 'material-ui/styles/colors';
 import Grid from '@material-ui/core/Grid';
 import FlatButton from 'material-ui/FlatButton';
 import IconButton from '@material-ui/core/IconButton';

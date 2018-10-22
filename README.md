@@ -8,4 +8,4 @@ Get the weather for any city
 - Running
 `$ npm run start`
 
-![](public/demo.gif)
+![](demo.gif)
