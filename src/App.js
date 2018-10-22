@@ -14,7 +14,7 @@ import Dialog from 'material-ui/Dialog';
 import CircularProgress from 'material-ui/CircularProgress';
 
 
-import getWeather from './api.js';
+import { getWeather, postSubscribe } from './api.js';
 
 
 class App extends Component {
@@ -62,7 +62,17 @@ class App extends Component {
         }
       }
     );
+  }
 
+  subscribeAlerts = () => {
+    postSubscribe(this.state.phone, this.state.location).then(
+      (response) => {
+        if (response.data.ok) {
+          alert("Successfully subscribed!");
+        }
+      }).catch((error) => {
+        alert(error.response.data.message);
+    })
   }
 
   render() {
@@ -71,7 +81,7 @@ class App extends Component {
         label="Submit"
         primary={true}
         keyboardFocused={true}
-        onClick={this.handleClose}
+        onClick={() => { this.subscribeAlerts(); this.modalClose(); }}
       />,
     ];
     return (
