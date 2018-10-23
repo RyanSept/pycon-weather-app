@@ -8,4 +8,7 @@ Get the weather for any city
 - Running
 `$ npm run start`
 
+- Deploy
+`$ aws s3 sync build/ s3://public-weather-app`
+
 ![](demo.gif)
